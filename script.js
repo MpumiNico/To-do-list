@@ -106,15 +106,6 @@ function addTask(text) {
   }
 }
 
-document.getElementById("add-task-btn").addEventListener("click", function () {
-  const input = document.getElementById("new-task-input");
-  const text = input.value.trim();
-  if (text) {
-    addTask(text);
-    input.value = "";
-  }
-});
-
 function toggleComplete(id) {
   try {
     if (!id || typeof id !== "number") {
